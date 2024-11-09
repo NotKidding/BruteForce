@@ -3,15 +3,17 @@ import sys
 
 passkey = ''
 found = False
-
+try_count = 0
 def bruteForce(attempt='', length=1):
-    global found
+    global found, try_count
     chars = string.ascii_letters + string.digits + string.punctuation
     if len(attempt) == length:
         sys.stdout.write(f"\rTrying attempt: {attempt}")
         sys.stdout.flush()
+        try_count += 1
         if attempt == passkey:
             print(f"\n\nPasskey found: {attempt}")
+            print(f"Total tries: {try_count}")
             found = True
         return
     for char in chars:
