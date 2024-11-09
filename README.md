@@ -11,7 +11,7 @@ This is a simple Python script for performing brute force password cracking. The
 
 ## Requirements
 
-- Python 3.x
+- Python
 - Standard Python libraries (no external dependencies)
 
 ## Usage
