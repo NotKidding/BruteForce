@@ -22,4 +22,4 @@ This is a simple Python script for performing brute force password cracking. The
 ### Example
 
 ```bash
-python brute_force.py
+python BruteForce.py
