@@ -4,6 +4,7 @@ import sys
 passkey = ''
 found = False
 try_count = 0
+
 def bruteForce(attempt='', length=1):
     global found, try_count
     chars = string.ascii_letters + string.digits + string.punctuation
